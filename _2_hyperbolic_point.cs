@@ -40,7 +40,12 @@ namespace Metria_Test
             Assert.AreEqual(P.EuclidianPoweredDistance(new Point(1,1)), 2);
         }
 
-
+        [TestMethod]
+        public void euclidian_powered_distance_2()
+        {
+            Point P = new Point();
+	    Asser.AreEqual(P.EuclidianPoweredDistance(new Point(0,10),100);
+        }
 
     }
 }
