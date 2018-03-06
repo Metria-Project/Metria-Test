@@ -1,0 +1,799 @@
+﻿===
+
+Code
+	_1
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new vertical line with X = 2 and call it l
+Check
+	l.A.X == 2
+	l.B.X == 2
+	l.Center == new Point(2,0)
+	l.Alfa == new Point(2,0)
+	l.Beta == new Point(2,0)
+	l.Radius == 2
+
+===
+
+Code
+	_2
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new line from (2,0) and going to (2,6) it l
+Check
+	l.A == new Point(2,0)
+	l.B == new Point(2,6)
+	
+===
+
+Code
+	_3
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new line from (2,9) and going to (2,6) it l
+Check
+	l.A == new Point(2,6)
+	l.B == new Point(2,9)
+
+===
+
+Code
+	_4
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new line from (2,0) and going to (6,0) it l
+Check
+	l.Center == new Point(4,0)
+	l.Alfa == new Point(2,0)
+	l.Beta == new Point(6,0)
+	l.Radius == 2
+
+===
+
+Code
+	_5
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new line from (1,2) and going to (2,sqrt(3)) it l
+Check
+	l.Center == new Point(1,0)
+	l.Alfa == new Point(-1,0)
+	l.Beta == new Point(3,0)
+	l.Radius == 2
+
+===
+
+Code
+	_6
+Place
+	_2_hyperbolic_line.cs
+Process 
+	Create a new line from (2,sqrt(3)) and going to (1,2) it l
+Check
+	l.A == new Point(1,2)
+	l.B == new Point(2,sqrt(2))
+	
+===
+
+Code
+	_7
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (1,0) to (2,0) and call it l
+	Create a line from (1,0) to (2,0) and call it t
+	Intersect l with t
+Check
+	Raise a exception
+
+===
+
+Code
+	_8
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a vertical line with X = 2 and call it t
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_9
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a line from (0,0) to (2,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == new Point(1,1)
+
+===
+
+Code
+	_10
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it t
+	Create a line from (1,0) to (2,0) and call it l
+	Interesect l with t and call it p
+Check
+	p == new Point(1,0)
+
+===
+
+Code
+	_11
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a line from (2,0) to (3,0) and call it t
+	Intersect t with l and call it p
+Check
+	p == null
+
+===
+
+Code
+	_12
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a line from (0,0) to (2,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == new Point(1,1)
+
+===
+
+Code
+	_13
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a line from (1,0) to (2,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == new Point(1,0)
+
+===
+
+Code
+	_14
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a line from (2,0) to (3,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_15
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (0,0) to (2,0) and call it t
+	Create a line from (2,0) to (4,0) and call it l
+	Intersect t with l and call it p
+Check
+	p == new Point(2,0)
+
+===
+
+Code
+	_16
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it t
+	Create a line from (0,0) to (2,0) and call it l
+	Intersect l with t and call it p
+Check
+	p == new Point(1/2,sqrt(3/4))
+
+===
+
+Code
+	_17
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (0,0) to (23,0) and call it l
+	Create a line from (23,0) to (24,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == new Point(23,0)
+
+===
+
+Code
+	_18
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (0,0) to (2,0) and call it t
+	Intersect l with t and call it p
+Check
+	p == new Point(1/2,sqrt(3/4))
+
+===
+
+Code
+	_19
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from(0,0) to (2,0) and call it t
+	Create a line from(3,0) to (4,0) and call it l
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_20
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (4,0) to (6,0) and call it t
+	Create a line from (-3,0) to (-1,0) and call it l
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_21
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-5,0) to (5,0) and call it t
+	Create a line from (-1,0) to (1,0) and call it l
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_22
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-2,0) to (1,0) and call it t
+	Create a line from (-4,0) to (3,0) and call it l
+	Intersect l with t and call it p
+Check
+	p == null
+
+===
+
+Code
+	_23
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (3,0) and call it l
+	Create a point in (1,2) and call it p
+Check
+	p belongs to l
+
+===
+
+Code
+	_24
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (3,0) and call it l
+	Create a point in (1,3) and call it p
+Check
+	p does not belong to l
+
+===
+
+Code
+	_25
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (3,0) to (13,0) and call it l
+	Create a point in (11,4) and call it p
+Check
+	p belongs to l
+
+===
+
+Code
+	_26
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (3,0) to (13,0) and call it l
+	Create a point in (11,0) and call it p
+Check
+	p does not belong to l
+
+===
+
+Code
+	_27
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it l
+	Create a point in (11,0) and call it p
+Check
+	p does not belong to l
+
+===
+
+Code
+	_28
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 7 and call it l
+	Create a point in (7,0) and call it p
+Check
+	p belongs to l
+
+===
+
+Code
+	_29
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (1,0) to (3,0) and call it t
+	Create a point in (2,1) and call it p
+	Create a point in (5,5) and call it r
+Check
+	p is on the same side of t that r shall raise a exception
+
+===
+
+Code
+	_30
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it t
+	Create a point in (2,1) and call it p
+	Create a point in (1,78) and call it r
+Check
+	p is on the same side of t that r shall raise a exception
+
+===
+
+Code
+	_31
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 5 and call it t
+	Create a point in (14,35) and call it p
+	Create a point in (5,12.6) and call it r
+Check
+	p is on the same side of t that r shall raise a exception
+
+===
+
+Code
+	_32
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 2 and call it t
+	Create a point in (1,2) and call it p
+	Create a point in (-3,7) and call it r
+Check
+	p is on the same side of t that r
+
+===
+
+Code
+	_33
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 2 and call it t
+	Create a point in (5,2) and call it p
+	Create a point in (12,7) and call it r
+Check
+	p is on the same side of t that r
+
+===
+
+Code
+	_34
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 5 and call it t
+	Create a point in (12,2) and call it p
+	Create a point in (-3,7) and call it r
+Check
+	p is not on the same side of t that r
+
+===
+
+Code
+	_35
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 15 and call it t
+	Create a point in (-72,2) and call it p
+	Create a point in (27,7) and call it r
+Check
+	p is not on the same side of t that r
+
+===
+
+Code
+	_36
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it t
+	Create a point in (-2,3) and call it p
+	Create a point in (0.5,9) and call it r
+Check
+	p is on the same side of t that r
+
+===
+
+Code
+	_37
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-7,0) to (7,0) and call it t
+	Create a point in (-2,3) and call it p
+	Create a point in (0.5,2) and call it r
+Check
+	p is on the same side of t that r
+
+===
+
+Code
+	_38
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-7,0) to (7,0) and call it t
+	Create a point in (-2,3) and call it p
+	Create a point in (9,2) and call it r
+Check
+	p is not on the same side of t that r
+
+===
+
+Code
+	_39
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-7,0) to (7,0) and call it t
+	Create a point in (-27,3) and call it p
+	Create a point in (5,1) and call it r
+Check
+	p is not on the same side of t that r
+
+======
+
+Code
+	_40
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 1 and call it cut
+	Create a line from (0,0) to (1,1) and call it mock
+	Create a point in (1,5) and call it ref
+Check
+	Cut mock with cut using ref shall raise a exception
+
+===
+
+Code
+	_41
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (1,0) to (3,0) and call it cut
+	Create a line from (2,0) to (5,0) and call it mock
+	Create a point in (2,1) and call it r
+Check
+	Cut mock with cut using r shall raise a exception
+
+===
+
+Code
+	_42
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it cut
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a point at (5,9) and call it r
+Check
+	Cut l with cut using r is a undefined behavior
+
+===
+
+Code
+	_43
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (1,0) t0 (5,0) and call it cut
+	Create a point at (5,0.5) and call it r
+Check
+	Cut l with cut using r == l
+
+===
+
+Code
+	_44
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (3,0) t0 (5,0) and call it cut
+	Create a point at (5,0.5) and call it r
+Check
+	Cut l with cut using r == l
+
+===
+
+Code
+	_45
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (3,0) to (5,0) and call it cut
+	Create a point at (0,0) and call it r
+Check
+	Cut l with cut using r == l
+
+===
+
+Code
+	_46
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (-0.5,0) t0 (0.5,0) and call it cut
+	Create a point at (-0.5,0) and call it r
+Check
+	Cut l with cut using r shall raise an exception
+
+===
+
+Code
+	_47
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (-0.5,0) t0 (0.5,0) and call it cut
+	Create a point at (2,0) and call it r
+Check
+	Cut l with cut using r == l
+
+===
+
+Code
+	_48
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a line from (-0.5,0) t0 (0.5,0) and call it cut
+	Create a point at (0,0) and call it r
+Check
+	Cut l with cut using r == null
+
+===
+
+Code
+	_49
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a vertical line with X = 0.5 and call it cut
+	Create a point at (0,0) and call it r
+Check
+	Cut l with cut using r == new Ray(new Point(0.5,sqrt(0,75)),l.Alfa)
+
+===
+
+Code
+	_50
+Place 
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (-1,0) to (1,0) and call it l
+	Create a vertical line with X = -0.5 and call it cut
+	Create a point at (0,0) and call it r
+Check
+	Cut l with cut using r == new Ray(new Point(-0.5,sqrt(0,75)),l.Beta)
+
+===
+
+Code
+	_51
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a line from (1,0) to (3,0) and call it l
+Check
+	Zoom l by 6 == new Line(new Point(6,0), new Point(18,0))
+
+===
+
+Code
+	_52
+Place
+	_2_hyperbolic_line.cs
+Process
+	Create a vertical line with X = 2 and call it l
+Check
+	Zoom l by 5 == new Line(new Point(10,0), new Point(10,1))
+
+===
+
+Code
+	_53
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segment from (5,0) to (5,5) and call it l
+Check
+	l.A == new Point(5,5)
+	l.B == new Point(5,0)
+
+===
+
+Code
+	_54
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segment from (7,7) to (7,5) and call it l
+Check
+	l.A == new Point(7,7)
+	l.B == new Point(7,5)
+
+===
+
+Code
+	_55
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segment from (0,0) to (4,0) and call it l
+Check
+	l shall raise a exception
+
+===
+
+Code
+	_56
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segment from (7,6) to (2,3) and call it l
+Check
+	l.A == new Point(2,3)
+	l.B == new Point(7,6)
+
+===
+
+Code
+	_57
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segment from (2,1) to (7,6) and call it l
+Check
+	l.A == new Point(2,3)
+	l.B == new Point(7,6)
+
+===
+
+Code
+	_58
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segmnet from (0,1) to (3,2) and call it l
+	Clone l and call it c
+Check
+	c.A == new Point(0,1)
+	c.B == new Point(3,2)
+
+===
+
+Code
+	_59
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segmnet from (2,1) to (2,9) and call it l
+	Clone l and call it c
+Check
+	c.A == new Point(2,9)
+	c.B == new Point(2,1)
+
+===
+
+Code
+	_60
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segmnet from (3,8) to (3,2) and call it l
+	Zoom l by 5 and call it z
+Check
+	z == new LineSegment(new Point(15,40), new Point(15,10))
+
+===
+
+Code
+	_61
+Place
+	_2_hyperbolic_LineSegment.cs
+Process
+	Create a line segmnet from (2,6) to (7,3) and call it l
+	Zoom l by 4 and call it z
+Check
+	z == new LineSegment(new Point(8,24), new Point(28,12))
+
+===
+
+Code
+	_62
+Place
+	_2_hyperbolic_Ray.cs
+Process
+	Create a ray from (3,0) to (9,4) and call it r
+	Clone r and call it c
+Check
+	c == r
+===
+
+Code
+	_63
+Place
+	_2_hyperbolic_ray.cs
+Process
+	Create a ray from (7,1) to (7,9) and call it r
+	Clone r and call it c
+Check
+	c == r
