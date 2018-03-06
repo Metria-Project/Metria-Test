@@ -193,9 +193,9 @@ namespace Metria_Test
         [TestMethod]
         public void instersection_point_1()
         {
-            LineSegment _base = new LineSegment(new Point(0, 0)
-                , new Point(2, 0));
-            Line cut = new Line( new Point(1,0), new Point(0,0));
+            LineSegment _base = new LineSegment(new Point(0.4, 0.8)
+                , new Point(1.6, 0.8));
+            Line cut = new Line( new Point(1,0), new Point(1,1));
             Point ret = new Point(1, 1);
             Assert.AreEqual(_base.IntersectionPoint(cut), ret);
         }
