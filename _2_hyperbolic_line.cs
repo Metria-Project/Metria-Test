@@ -357,7 +357,7 @@ namespace Metria_Test
             Line m = new Line(new Point(-2, 0), new Point(2, 0))
             , l = new Line(new Point(-5, 0), new Point(-2, 1));
             Point p = l.IntersectionPoint(m)
-            , esperado = new Point(-1.9,0.8);
+            , esperado = new Point(-1.9,0.8); 
             Assert.AreEqual(p,esperado);
         }
         [TestMethod]
