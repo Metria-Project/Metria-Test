@@ -794,7 +794,7 @@ namespace Metria_Test
             {
                 passou = true;
             }
-            Assert.AreEqual(passou, true);
+            Assert.AreEqual(true, passou);
         }
         #endregion
         #region Zoom
