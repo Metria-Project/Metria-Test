@@ -131,7 +131,7 @@ namespace Metria_Test
             Point a = new Point(0,19), b = new Point(0,5);
             LineSegment _base = new LineSegment(a, b);
             Point t = new Point(0, 21);
-            Assert.AreEqual(_base.Belongs(a), false);
+            Assert.AreEqual(false, _base.Belongs(a));
         }
         
         [TestMethod]
