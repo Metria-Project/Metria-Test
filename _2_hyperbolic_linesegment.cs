@@ -110,10 +110,10 @@ namespace Metria_Test
         public void _64()
         {
 	    //infinity
-            Point a = new Point(0,7), b = new Point(0,0);
+            Point a = new Point(-1,Math.Sqrt(24)), b = new Point(1,Math.Sqrt(24));
             LineSegment l = new LineSegment(a, b);
             Point p = new Point(0, 5);
-            Assert.AreEqual(l.Belongs(p), true);
+            Assert.AreEqual(true,l.Belongs(p));
         }
         
         [TestMethod]
