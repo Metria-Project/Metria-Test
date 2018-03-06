@@ -212,7 +212,7 @@ namespace Metria_Test
             Line m = new Line(new Point(0, 0), new Point(23, 0))
             , l = new Line(new Point(23, 0), new Point(24, 0));
             Point p = l.IntersectionPoint(m)
-            , esperado = new Point(1,0);
+            , esperado = new Point(23,0);
             Assert.AreEqual(p,esperado);
         }
         [TestMethod]
