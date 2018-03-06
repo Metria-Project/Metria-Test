@@ -330,8 +330,8 @@ namespace Metria_Test
         [TestMethod]
         public void instersection_point_22()
         {
-            Line l = new Line(new Point(4, 1), new Point(6, 12))
-            , m = new Line(new Point(4.0002, 1.0002), new Point(6.0002, 12.0002));
+            Line l = new Line(new Point(2,0), new Point(6,0))
+            , m = new Line(new Point(1.9998, 0), new Point(6.0002, 0));
             Point p = l.IntersectionPoint(m);
             Assert.AreEqual(object.ReferenceEquals(p, null), true);
         }
