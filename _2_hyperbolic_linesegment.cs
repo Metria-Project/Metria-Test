@@ -146,10 +146,10 @@ namespace Metria_Test
         [TestMethod]
         public void belongs_5()
         {
-            Point a = new Point(-1, 5), b = new Point(1, 5);
+            Point a = new Point(-4, 5), b = new Point(4, 5);
             LineSegment _base = new LineSegment(a, b);
             Point t = new Point(0, 6);
-            Assert.AreEqual(_base.Belongs(t), true);
+            Assert.AreEqual(_base.Belongs(t), false);
         }
         
         [TestMethod]
