@@ -213,17 +213,17 @@ namespace Metria_Test
         [TestMethod]
         public void instersection_point_3()
         {
-            LineSegment _base = new LineSegment( new Point(0,0)
-                , new Point(2,0));
-            Line cut = new Line( new Point(1,0), new Point(0,0));
-            bool passou = false;
+            LineSegment _base = new LineSegment( new Point(0.3,0.71)
+                , new Point(1.7,0.71));
+            Line cut = new Line( new Point(1,0), new Point(1,2));
+            bool passou = true;
             try
             {
                 Point ret = new Point(1, 1);
             }
             catch
             {
-                passou = true;
+                passou = false;
             }
             Assert.AreEqual(passou, true);
         }
