@@ -103,8 +103,8 @@ namespace Metria_Test
         {
             Point a = new Point(-3, 0), b = new Point(-9, 0);
             Line l = new Line(a, b);
-            Assert.AreEqual(l.Alfa == new Point(-2,0) && l.Beta == new Point(6,0)
-            && l.Center == new Point(6,0) && l.Radius == 2 && l.A == b
+            Assert.AreEqual(l.Alfa == new Point(-9,0) && l.Beta == new Point(-3,0)
+            && l.Center == new Point(-6,0) && l.Radius == 3 && l.A == b
             && l.B == a, true );
         }
         #endregion
