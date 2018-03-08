@@ -23,8 +23,8 @@ namespace Metria_Test
         {
             Point a = new Point(7,7), b = new Point(7,5);
             LineSegment _base = new LineSegment(a, b);
-            Assert.AreEqual(_base.A == new Point(7,7) 
-			    && _base.B == new Point(7,5), true);
+            Assert.AreEqual(_base.A == new Point(7,5) 
+			    && _base.B == new Point(7,7), true);
         }
         
         [TestMethod]
