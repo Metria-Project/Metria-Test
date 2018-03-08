@@ -95,7 +95,7 @@ namespace Metria_Test
             Point a = new Point(2, 4), b = new Point(0, 2 * Math.Sqrt(3));
             Line l = new Line(a, b);
             Assert.AreEqual(l.Alfa == new Point(-2,0) && l.Beta == new Point(6,0)
-            && l.Center == new Point(2,0) && Math.Abs(l.Radius - 3) < Base.Epslon && l.A == b 
+            && l.Center == new Point(2,0) && Math.Abs(l.Radius - 4) < Base.Epslon && l.A == b 
             && l.B == a, true );
         }
         [TestMethod]
@@ -355,9 +355,9 @@ namespace Metria_Test
         public void instersection_point_25()
          {
             Line m = new Line(new Point(-2, 0), new Point(2, 0))
-            , l = new Line(new Point(-5, 0), new Point(-2, 1));
+            , l = new Line(new Point(-5, 0), new Point(-1, 0));
             Point p = l.IntersectionPoint(m)
-            , esperado = new Point(-1.9,0.8); 
+            , esperado = new Point(-1.5,1.32); 
             Assert.AreEqual(p,esperado);
         }
         [TestMethod]
