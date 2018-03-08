@@ -12,9 +12,9 @@ namespace Metria_Test
         [TestMethod]
         public void _53()
         {
-            Point a = new Point(5,0), b = new Point(5,5);
+            Point a = new Point(5,1), b = new Point(5,5);
             LineSegment _base = new LineSegment(a, b);
-            Assert.AreEqual(_base.A == new Point(5,0)
+            Assert.AreEqual(_base.A == new Point(5,1)
 			   && _base.B == new Point(5,5), true);
         }
         
