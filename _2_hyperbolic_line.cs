@@ -81,9 +81,9 @@ namespace Metria_Test
             && l.A == a && l.B == b, true );
         }
         [TestMethod]
-        public void fix_values_9()//ciro errou aqui
+        public void fix_values_9()//vc tinha errado aki kkk
         {
-            Point a = new Point(4, 3), b = new Point(5, 2 * Math.Sqrt(3));
+            Point a = new Point(4, 3), b = new Point(5, 2 * Math.Sqrt(2));
             Line l = new Line(a, b);
             Assert.AreEqual(l.Alfa == new Point(1,0) && l.Beta == new Point(7,0)
             && l.Center == new Point(4,0) && Math.Abs(l.Radius - 3) < Base.Epslon && l.A == a 
